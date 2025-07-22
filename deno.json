@@ -1,4 +1,8 @@
 {
+  "tasks": {
+    "test": "deno test --allow-net --allow-env --allow-read --allow-run main_test.ts",
+    "start": "deno run --allow-net main.ts"
+  },
   "deploy": {
     "project": "5085571c-6460-4b2c-88fa-3e864fc2e9c4",
     "exclude": [
@@ -6,5 +10,8 @@
     ],
     "include": [],
     "entrypoint": "main.ts"
+  },
+  "imports": {
+    "poku": "npm:poku@^3.0.2"
   }
 }
